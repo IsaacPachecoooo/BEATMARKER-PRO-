@@ -1,0 +1,5 @@
+{
+  "name": "Copy of Copy of Audio Sync Tool",
+  "description": "A high-performance audio analysis tool that detects rhythmic beats and onsets, exporting them as Adobe Premiere Pro and After Effects compatible markers (CSV/XML) for rhythmic video editing.",
+  "requestFramePermissions": []
+}
