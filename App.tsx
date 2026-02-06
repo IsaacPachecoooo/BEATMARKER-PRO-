@@ -152,7 +152,7 @@ const App: React.FC = () => {
                 </div>
                 <ol className="list-decimal list-inside space-y-2 text-slate-300 ml-2">
                   <li>Exporta el archivo <b>XML</b> desde esta app.</li>
-                  <li>En Premiere Pro, ve a <b>Archivo > Importar...</b> (o Ctrl+I).</li>
+                  <li>En Premiere Pro, ve a <b>Archivo &gt; Importar...</b> (o Ctrl+I).</li>
                   <li>Selecciona el archivo XML descargado.</li>
                   <li>Premiere creará una nueva <b>Secuencia</b> que contiene todos los marcadores en su posición exacta.</li>
                   <li>Puedes copiar estos marcadores a tu secuencia principal o editar directamente en la nueva.</li>
@@ -168,7 +168,7 @@ const App: React.FC = () => {
                 <ol className="list-decimal list-inside space-y-2 text-slate-300 ml-2">
                   <li>Exporta el archivo <b>JSX</b> desde esta app.</li>
                   <li>En After Effects, <b>selecciona la capa</b> donde quieras los marcadores.</li>
-                  <li>Ve al menú <b>Archivo > Scripts > Ejecutar archivo de script...</b></li>
+                  <li>Ve al menú <b>Archivo &gt; Scripts &gt; Ejecutar archivo de script...</b></li>
                   <li>Selecciona el archivo .jsx descargado. ¡Listo!</li>
                 </ol>
               </section>
@@ -466,8 +466,7 @@ const App: React.FC = () => {
                         disabled={markers.length === 0}
                         onClick={() => exportMarkers(markers, ExportFormat.AFTER_EFFECTS_JS, file?.name || 'audio')}
                         className="w-full p-3 text-left rounded-lg bg-slate-800 hover:bg-slate-700 disabled:opacity-50 disabled:cursor-not-allowed transition-all border border-slate-700 flex items-center gap-3 group"
-                    >
-                        <div className="w-10 h-10 bg-indigo-600/20 rounded flex items-center justify-center text-indigo-400 font-bold group-hover:bg-indigo-600 group-hover:text-white transition-all shadow-inner">
+                    >&gt;                        <div className="w-10 h-10 bg-indigo-600/20 rounded flex items-center justify-center text-indigo-400 font-bold group-hover:bg-indigo-600 group-hover:text-white transition-all shadow-inner">
                             Ae
                         </div>
                         <div>
