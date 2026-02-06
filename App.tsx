@@ -135,7 +135,7 @@ const App: React.FC = () => {
     <div className="min-h-screen p-4 md:p-8 flex flex-col max-w-7xl mx-auto">
       {/* Help Modal */}
       {showHelp && (
-        <div "fixed inset-0 z-50 flex items-center justify-center p-4 bg-black/80 backdrop-blur-sm">
+        <div className="fixed inset-0 z-50 flex items-center justify-center p-4 bg-black/80 backdrop-blur-sm">
           <div "bg-slate-900 border border-slate-700 rounded-2xl max-w-2xl w-full p-8 max-h-[90vh] overflow-y-auto custom-scrollbar shadow-2xl">
             <div "flex justify-between items-center mb-6">
               <h2 "text-2xl font-bold text-white">Guía de Importación Adobe</h2>
