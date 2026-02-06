@@ -139,7 +139,7 @@ const App: React.FC = () => {
           <div "bg-slate-900 border border-slate-700 rounded-2xl max-w-2xl w-full p-8 max-h-[90vh] overflow-y-auto custom-scrollbar shadow-2xl">
             <div "flex justify-between items-center mb-6">
               <h2 "text-2xl font-bold text-white">Guía de Importación Adobe</h2>
-              <button onClick={() => setShowHelp(false)} "text-slate-400 hover:text-white transition-colors">
+              <button onClick={() => setShowHelp(false)} className="text-slate-400 hover:text-white transition-colors">
                 <i "fa-solid fa-times text-xl"></i>
               </button>
             </div>
@@ -328,7 +328,7 @@ const App: React.FC = () => {
                                 max="1" 
                                 step="0.01" 
                                 value={config.sensitivity}
-                                onChange={(e) => setConfig(prev => ({...prev, sensitivity: parseFloat(e.target.value)}))}
+                                } className=" => setConfig(prev => ({...prev, sensitivity: parseFloat(e.target.value)}))}
                                 "w-full h-2 bg-slate-800 rounded-lg appearance-none cursor-pointer accent-blue-500"
                             />
                         </label>
@@ -343,7 +343,7 @@ const App: React.FC = () => {
                                 max="2" 
                                 step="0.05" 
                                 value={config.minDistance}
-                                onChange={(e) => setConfig(prev => ({...prev, minDistance: parseFloat(e.target.value)}))}
+                                } className=" => setConfig(prev => ({...prev, minDistance: parseFloat(e.target.value)}))}
                                 "w-full h-2 bg-slate-800 rounded-lg appearance-none cursor-pointer accent-blue-500"
                             />
                         </label>
@@ -446,7 +446,7 @@ const App: React.FC = () => {
             <div "bg-slate-900 border border-slate-800 rounded-xl p-4 shadow-xl shrink-0">
                 <div "flex justify-between items-center mb-4">
                   <h4 "text-xs font-bold text-slate-500 uppercase tracking-widest">Exportar para Adobe</h4>
-                  <button onClick={() => setShowHelp(true)} "text-[10px] text-blue-400 hover:underline">¿Ayuda?</button>
+                  <button onClick={() => setShowHelp(true)} className="text-[10px] text-blue-400 hover:underline">¿Ayuda?</button>
                 </div>
                 <div "grid grid-cols-1 gap-2">
                     <button 
