@@ -132,7 +132,7 @@ const App: React.FC = () => {
   };
 
   return (
-    <div "min-h-screen p-4 md:p-8 flex flex-col max-w-7xl mx-auto">
+    <div className="min-h-screen p-4 md:p-8 flex flex-col max-w-7xl mx-auto">
       {/* Help Modal */}
       {showHelp && (
         <div "fixed inset-0 z-50 flex items-center justify-center p-4 bg-black/80 backdrop-blur-sm">
